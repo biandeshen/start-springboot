@@ -13,7 +13,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-mybatis-druid-mutil-datasource" target="1.8" />
       <module name="springboot-mybatis-duird-mutil-datasource" target="1.8" />
       <module name="springbootdemo" target="1.8" />
       <module name="start-springboot" target="1.5" />

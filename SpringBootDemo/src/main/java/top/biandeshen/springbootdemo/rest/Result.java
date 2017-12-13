@@ -42,7 +42,6 @@ public class Result {
         return this;
     }
 
-    @Override
     public String toString() {
         return JSON.toJSONString(this);
     }

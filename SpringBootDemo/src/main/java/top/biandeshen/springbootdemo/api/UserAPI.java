@@ -1,5 +1,6 @@
 package top.biandeshen.springbootdemo.api;
 
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,7 @@ import top.biandeshen.springbootdemo.service.UserService;
 @EnableAutoConfiguration
 @RestController
 @RequestMapping("/demo/user")
-public class UserAPI {
+public class UserAPI{
     @Autowired
     private UserService userService;
 
@@ -38,9 +39,9 @@ public class UserAPI {
         return ResultGenerator.genSuccessResult(user);
     }
 
-//    @GetMapping
-//    public Result list(Integer pageNumber, Integer pageSize) {
-//        PageInfo pageInfo = userService.findAll(pageNumber,pageSize);
-//        return ResultGenerator.genSuccessResult(pageInfo);
-//    }
+    @GetMapping
+    public Result list(Integer pageNumber, Integer pageSize) {
+        PageInfo pageInfo = userService.findAll(pageNumber,pageSize);
+        return ResultGenerator.genSuccessResult(pageInfo);
+    }
 }

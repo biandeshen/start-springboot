@@ -1,9 +1,9 @@
 package top.biandeshen.springbootdemo.base;
 
 
-//import com.github.pagehelper.ISelect;
-//import com.github.pagehelper.PageHelper;
-//import com.github.pagehelper.PageInfo;
+import com.github.pagehelper.ISelect;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.exceptions.TooManyResultsException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -88,7 +88,6 @@ public abstract class AbstractService<T> implements Service<T> {
     return mapper.selectCount(null);
   }
 
-/*  @Override
   public PageInfo findAll(Integer pageNumber, Integer pageSize) {
     return PageHelper.startPage(pageNumber, pageSize).doSelectPageInfo(new ISelect() {
       @Override
@@ -96,5 +95,5 @@ public abstract class AbstractService<T> implements Service<T> {
         mapper.selectAll();
       }
     });
-  }*/
+  }
 }

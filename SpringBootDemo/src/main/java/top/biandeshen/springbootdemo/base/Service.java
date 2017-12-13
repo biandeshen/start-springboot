@@ -1,6 +1,6 @@
 package top.biandeshen.springbootdemo.base;
 
-//import com.github.pagehelper.PageInfo;
+import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.exceptions.TooManyResultsException;
 import tk.mybatis.mapper.entity.Condition;
 
@@ -38,5 +38,5 @@ public interface Service<T> {
    * @param pageSize 每页提取记录数
    * @return
    */
-//  PageInfo findAll(Integer pageNumber, Integer pageSize);// paging select
+  PageInfo findAll(Integer pageNumber, Integer pageSize);// paging select
 }
