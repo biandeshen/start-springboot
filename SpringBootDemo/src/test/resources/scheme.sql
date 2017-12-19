@@ -7,5 +7,5 @@ CREATE TABLE `user` (
   `email` varchar(255) DEFAULT NULL,
   `note` text,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 

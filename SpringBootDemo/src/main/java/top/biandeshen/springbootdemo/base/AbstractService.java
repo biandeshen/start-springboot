@@ -88,6 +88,7 @@ public abstract class AbstractService<T> implements Service<T> {
     return mapper.selectCount(null);
   }
 
+  @Override
   public PageInfo findAll(Integer pageNumber, Integer pageSize) {
     return PageHelper.startPage(pageNumber, pageSize).doSelectPageInfo(new ISelect() {
       @Override

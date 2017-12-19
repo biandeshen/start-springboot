@@ -12,7 +12,6 @@ public enum ResultCode {
     INTERNAL_SERVER_ERROR(500);//服务器内部错误
 
     public int code;
-
     ResultCode(int code) {
         this.code = code;
     }
